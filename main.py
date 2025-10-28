@@ -24,7 +24,7 @@ def menu():
                 print("Saindo... até mais!")
                 break
             else:
-                print("Opção inválida.")
+                print("Opção inválida. Tente novamente.")
         except ValueError:
             print("Digite um número válido.")
             registrar_log("Erro: entrada inválida no menu")
