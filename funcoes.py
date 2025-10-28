@@ -1,4 +1,6 @@
-﻿import os
+﻿# Gui: usei .txt mesmo pra simplificar e não dar pau na máquina do lab
+# Se quebrar na leitura, o try/except abaixo segura
+import os
 from datetime import datetime
 
 ARQUIVO = "dados/registros.txt"
@@ -29,7 +31,17 @@ def salvar_dados():
 def cadastrar():
     nome = input("Nome: ")
     curso = input("Curso: ")
-    media = input("Média final: ")
+    while True:
+    media = input("Média final (0 a 10): ")
+    try:
+        m = float(media)
+        if 0 <= m <= 10:
+            media = str(m)
+            break
+        else:
+            print("Informe um valor entre 0 e 10.")
+    except ValueError:
+        print("Digite um número válido.")
     dados.append({"nome": nome, "curso": curso, "media": media})
     salvar_dados()
     registrar_log(f"Cadastro de aluno: {nome}")
@@ -56,7 +68,7 @@ def editar():
             registrar_log(f"Edição de registro: {dados[idx]['nome']}")
             print("Registro atualizado com sucesso!")
         else:
-            print("Registro não encontrado.")
+            print("Registro não encontrado. Confere o número aí, por favor.")
     except ValueError:
         print("Entrada inválida.")
         registrar_log("Erro ao editar registro")
@@ -72,7 +84,7 @@ def excluir():
             registrar_log(f"Exclusão de registro: {nome}")
             print("Registro excluído com sucesso!")
         else:
-            print("Registro não encontrado.")
+            print("Registro não encontrado. Confere o número aí, por favor.")
     except ValueError:
         print("Entrada inválida.")
         registrar_log("Erro ao excluir registro")

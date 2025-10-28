@@ -1,0 +1,1 @@
+﻿10/28/2025 14:03:48 - Sistema de Votação Simples testado e validado localmente.

@@ -1,4 +1,11 @@
-﻿from funcoes import *
+﻿SOBRE = """\
+Trabalho: Menu Interativo (Pensamento Computacional)
+Grupo: Guilherme Vieira Marques (RA 1138951), Pedro Polita (1138911), Gabriel de Oliveira (1139027)
+Professor: Augusto Kruger Ortolan - Entrega: 31/10/2025
+"""
+print(SOBRE)
+
+from funcoes import *
 
 def menu():
     while True:
@@ -24,7 +31,7 @@ def menu():
                 print("Saindo... até mais!")
                 break
             else:
-                print("Opção inválida.")
+                print("Opção inválida. Tenta de novo, campeão. Tente novamente.")
         except ValueError:
             print("Digite um número válido.")
             registrar_log("Erro: entrada inválida no menu")

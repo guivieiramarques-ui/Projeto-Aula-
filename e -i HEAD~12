@@ -1,0 +1,13 @@
+[33ma0cf697[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m docs: corrige acentuação e ajusta seção de observações
+[33m1328684[m docs: melhora seção de observações para linguagem mais natural
+[33mfd008a4[m docs: atualiza link do repositório para Sistema-Votacao-Simples
+[33m2a4e9ec[m docs: adiciona PDF de evidências do trabalho
+[33m97edd4e[m docs: atualiza README para tema 'Sistema de Votação Simples' e adiciona evidências
+[33m785739b[m chore: remove arquivos criados por engano
+[33m2fd0390[m[33m ([m[1;33mtag: [m[1;33mv0.1[m[33m)[m docs: adiciona PROGRESSO, CHANGELOG e evidências iniciais
+[33mea9f730[m style: melhora mensagem de opção inválida no menu
+[33m553d2a0[m Update README.md
+[33m812fef6[m feat: adiciona validação de média (0–10) no cadastro
+[33mbe6b603[m style: melhora mensagem de opção inválida no menu
+[33md762e17[m docs: adiciona README completo
+[33ma08cc9d[m feat: adiciona estrutura inicial e menu interativo completo
