@@ -5,9 +5,9 @@
 **Data de Entrega:** 31/10/2025  
 
 ## Grupo
-- Guilherme Vieira Marques – RA: [teu RA aqui]
-- [Nome do colega 1] – RA: [RA do colega 1]
-- [Nome do colega 2] – RA: [RA do colega 2]
+- Guilherme Vieira Marques – RA: [1138951]
+- [Pedro Polita] – RA: [1138911]
+- [Gabriel de Oliveira] – RA: [1139027]
 
 ---
 
