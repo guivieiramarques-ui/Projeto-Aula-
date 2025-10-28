@@ -29,7 +29,17 @@ def salvar_dados():
 def cadastrar():
     nome = input("Nome: ")
     curso = input("Curso: ")
-    media = input("Média final: ")
+    while True:
+    media = input("Média final (0 a 10): ")
+    try:
+        m = float(media)
+        if 0 <= m <= 10:
+            media = str(m)
+            break
+        else:
+            print("Informe um valor entre 0 e 10.")
+    except ValueError:
+        print("Digite um número válido.")
     dados.append({"nome": nome, "curso": curso, "media": media})
     salvar_dados()
     registrar_log(f"Cadastro de aluno: {nome}")
